@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="color: white;">Welcome to the Etch-a-Sketch Game!</h1>
+    <div class="main">
+        <div class="left-menu">
+
+            <button id="select-size">Select a Size</button>
+            <input type="submit" id="select-size">
+            <button id="clear" onclick="clearBoard()">Clear the Board</button>
+            <button id="toggle">Toggle Lines</button>
+            <button id="default-color" onclick="setColor('black')">Black</button>            
+            <button id="rainbow" onclick="setColor('random')">Rainbow Color</button>
+            <div class="colorpick"><input type="color" id="pick-color" onclick="setColor('pickColor')" name="color"
+                    value="e66465">
+                <p style="text-align : center;">Pick your own color from the palette above!</p>
+            </div>
+
+        </div>
+
+        <div class="container"></div>
+
+        <div class="right-menu">
+            <p>Click to the board to toggle the drawing on/off.</p>
+            <div class="message-box">
+                <p style="text-align: center;">Board status:</p>
+                <p id="message" style="height: 80px; text-align: center;"></p>
+                <p style="text-align: center;">Draw status:</p>
+                <p id="draw" style="height: 80px; text-align: center;"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js" async defer></script>
+</body>
+
+</html>

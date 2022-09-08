@@ -1,0 +1,75 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(117, 110, 141);
+
+}
+
+
+
+.left-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 495px;
+  width: 150px;
+  gap: 10px;
+  border-style: dotted;
+  border-width: 5px;
+  background-color: peru;
+}
+
+.right-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 495px;
+  width: 150px;
+  gap: 10px;
+  border-style: dotted;
+  border-width: 5px;
+  background-color: peru;
+
+}
+
+.message-box {
+  height: 200px;
+}
+
+.colorpick {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+}
+
+
+button {
+  background-color: orange;
+  padding: 10px;
+}
+
+.container {
+  display: grid;
+  width: 500px;
+  height: 500px;
+  border-color: black;
+  border-style: solid;
+  box-shadow: 10px 10px 5px gray;
+  margin-bottom: 25px;
+  background-color: white;
+}
+
+.divsClass {
+  border-style: solid;
+  border-color: black;
+  border-width: 0.1px;
+}
