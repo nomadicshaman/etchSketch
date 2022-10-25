@@ -9,16 +9,16 @@
 </head>
 
 <body>
-    <h1 style="color: white;">Welcome to the Etch-a-Sketch Game!</h1>
     <div class="main">
         <div class="left-menu">
 
             <button id="select-size">Select a Size</button>
             <button id="clear" onclick="clearBoard()">Clear the Board</button>
             <button id="toggle">Toggle Lines</button>
-            <button id="default-color" onclick="setColor('black')">Black</button>            
+            <button id="default-color" onclick="setColor('black')">Black</button>
             <button id="rainbow" onclick="setColor('random')">Rainbow Color</button>
-            <div class="colorpick"><input type="color" id="pick-color" onclick="setColor('pickColor')" name="color"
+            <div class="colorpick">
+                <input type="color" id="pick-color" onclick="setColor('pickColor')" name="color"
                     value="e66465">
                 <p style="text-align : center;">Pick your own color from the palette above!</p>
             </div>
@@ -28,7 +28,7 @@
         <div class="container"></div>
 
         <div class="right-menu">
-            <p>Click to the board to toggle the drawing on/off.</p>
+            <p style="text-align: center;">Click to the board to toggle the drawing on/off.</p>
             <div class="message-box">
                 <p style="text-align: center;">Board status:</p>
                 <p id="message" style="height: 80px; text-align: center;"></p>
@@ -37,9 +37,9 @@
             </div>
         </div>
     </div>
-    <div class="footer"> Created by 
+    <div class="footer"> Created by
         <a href="https://github.com/nomadicshaman">Burak Bozan</a>
-        </div>
+    </div>
 
 
     <script src="script.js" async defer></script>
